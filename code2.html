@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        .resume {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+        }
+
+        .resume .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+        }
+
+        .sidebar {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            height: 100%;
+            text-align: center;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007bff;
+            text-align: left;
+        }
+
+        .list-unstyled li {
+            margin-bottom: 10px;
+        }
+
+        .experience h5,
+        .education h5,
+        .projects h5 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .experience p,
+        .education p,
+        .projects p {
+            margin-bottom: 0;
+            color: #555;
+        }
+
+        .experience ul,
+        .projects ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header text-center">
+            <h1>Your Name</h1>
+            <p>Job Title | Email: your.email@example.com | Phone: +123 456 7890 | Location: City, Country</p>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-4 sidebar">
+                <!-- Profile Picture -->
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+
+                <h2 class="section-title">Contact Information</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> your.email@example.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+                    <p><strong>GitHub:</strong> github.com/yourusername</p>
+                </div>
+
+                <h2 class="section-title">Skills</h2>
+                <ul class="list-unstyled">
+                    <li>Java, Spring Boot, Hibernate</li>
+                    <li>HTML, CSS, JavaScript, Bootstrap</li>
+                    <li>MySQL, MongoDB</li>
+                    <li>Git, GitHub, Agile Methodologies</li>
+                </ul>
+
+                <h2 class="section-title">Languages</h2>
+                <ul class="list-unstyled">
+                    <li>English (Fluent)</li>
+                    <li>Spanish (Intermediate)</li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-8">
+                <!-- Summary -->
+                <h2 class="section-title">Professional Summary</h2>
+                <p>Results-driven software developer with over 3 years of experience in building web applications using Java, Spring Boot, and related technologies. Adept at problem-solving, optimizing performance, and contributing to team success with a strong focus on quality and efficiency.</p>
+
+                <!-- Experience -->
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience">
+                    <h5>Software Developer</h5>
+                    <p class="mb-1">XYZ Company | Jan 2021 - Present</p>
+                    <ul>
+                        <li>Developed scalable web applications using Java and Spring Boot, serving over 10,000 users monthly.</li>
+                        <li>Enhanced application performance by optimizing SQL queries, reducing response time by 30%.</li>
+                        <li>Worked closely with cross-functional teams to design and implement new features.</li>
+                    </ul>
+
+                    <h5>Intern Developer</h5>
+                    <p class="mb-1">ABC Company | Jun 2020 - Dec 2020</p>
+                    <ul>
+                        <li>Contributed to the development of internal tools using Java, JSP, and Servlets.</li>
+                        <li>Assisted in debugging and resolving software issues, improving product stability.</li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <h2 class="section-title">Education</h2>
+                <div class="education">
+                    <h5>Bachelor of Computer Science</h5>
+                    <p>University Name | 2017 - 2021</p>
+                </div>
+
+                <!-- Projects -->
+                <h2 class="section-title">Projects</h2>
+                <div class="projects">
+                    <h5>Project Name</h5>
+                    <p>A comprehensive description of a project, highlighting key technologies like Java, Spring Boot, and your role in its development.</p>
+
+                    <h5>Another Project</h5>
+                    <p>Brief overview of a significant project, detailing your contributions and the impact of your work.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
